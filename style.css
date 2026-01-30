@@ -1,4 +1,3 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"); */
 /* * {
   margin: 0;
   padding: 0;
@@ -103,12 +102,15 @@ header nav ul a {
 .our-features p {
   font-size: 1.2rem;
   color: #727272;
-  margin-bottom: 32px;
 }
 .about-Features {
-  display: flex;
+  margin-top: 82px;
+  width: 95%;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
   /* max-width: 1440px; */
 }
@@ -125,8 +127,104 @@ header nav ul a {
   font-size: 2.125rem;
   margin-bottom: 24px;
 }
-.content-text .one .one-p-tag {
+.content-text .one-p-tag {
   color: #727272;
+  margin-bottom: 30px;
+}
+.lets-flex-it .h2-same {
+  font-size: 1.2rem;
+  color: #131313;
+  font-weight: 700;
+}
+.lets-flex-it .p-same {
+  color: #727272;
+}
+.content-text .same {
+  padding: 20px 3px 10px 20px;
+  box-shadow: 0px 4px 30px 0 rgba(0, 0, 0, 0.06);
+}
+.img-section img {
+  width: 90%;
+  height: 100%;
+}
+.main .features-pt-two {
+  /* width: 90%; */
+  margin-left: 180px;
+  margin-top: 120px;
+}
+.features-pt-two .textshit h2 {
+  font-size: 2.81rem;
+  font-weight: bold;
+}
+.textshit p {
+  color: #727272;
+}
+.features-pt-two .flex-icons {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.flex-icons .icons-text {
+  font-size: 2.81rem;
+  color: #424242;
+}
+
+.flex-icons .icons-p-tag {
+  font-size: 1.2rem;
+  color: #727272;
+  /* font-weight: 600; */
+}
+.box {
+  height: 200px;
+  width: 200px;
+  line-height: 1px;
+  border: 1.5px solid #ff900e;
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px 10px 10px 10px;
+}
+.sponspors {
+  margin-top: 180px;
+  text-align: center;
+  /* line-height: 15px; */
+  /* display: flex;
+  align-items: center; */
+  /* margin: 0 auto; */
+}
+.sponspors .sponspors-text {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.sponspors .sponspors-text h2 {
+  font-size: 2.8125rem;
+  font-weight: bold;
+  color: #131313;
+  margin-bottom: 25px;
+}
+.sponspors-text p {
+  color: #727272;
+}
+.sponspors-text {
+  margin-bottom: 50px;
+}
+.flex-sponspors img {
+  margin-left: 50px;
+}
+.footer {
+  /* width: ; */
+  /* width: 75%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer-p-tag {
+  font-size: 1.25rem;
+  color: #424242;
+  margin-top: 150px;
+  background-color: #fff4e7;
+  text-align: center;
+  padding: 20px 180px;
+  border-radius: 10px;
 }
 /* responsive media */
 @media screen and (max-width: 576px) {
@@ -170,6 +268,51 @@ header nav ul a {
   }
   .our-features {
     text-align: center;
+  }
+  /* TODO:Have to ask the menthors to solve this problem */
+  .about-Features {
+    /* display: grid; */
+    /* grid-template-columns: 100%; */
+    text-align: center;
+    /* margin-right: 50px; */
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+  }
+  .about-Features .img-section {
+    margin-top: 50px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* text-align: center; */
+    margin-left: 70px;
+  }
+  /* TODO:Have to ask the menthors to solve this problem */
+  .features-pt-two .textshit {
+    margin-left: -95px;
+    text-align: center;
+  }
+
+  .features-pt-two .flex-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .sponspors .flex-sponspors {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 30px;
+  }
+  .flex-sponspors img {
+    /* height: 90%; */
+    width: 70%;
+    height: auto;
+    padding-left: 70px;
+  }
+  .footer footer .footer-p-tag {
+    width: auto;
+    font-size: 1.25rem;
   }
 }
 @media screen and (min-width: 578px) and (max-width: 1150px) {
